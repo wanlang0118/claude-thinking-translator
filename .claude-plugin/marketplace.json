@@ -1,5 +1,5 @@
 {
-  "name": "thinking-translator",
+  "name": "claude-thinking-translator",
   "description": "把 Claude Code 的思考内容翻译成目标语言（终端与桌面通用）",
   "owner": {
     "name": "wanlang0118"

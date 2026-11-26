@@ -20,7 +20,7 @@
 
 ```bash
 claude plugin marketplace add wanlang0118/claude-thinking-translator
-claude plugin install thinking-translator@thinking-translator
+claude plugin install thinking-translator@claude-thinking-translator
 ```
 
 重启 Claude Code，或新开一个会话后生效。
@@ -42,7 +42,7 @@ claude --plugin-dir ./claude-thinking-translator
 
 ## 配置
 
-在 `/config` 里修改，或写入 `settings.json` 的 `pluginConfigs["thinking-translator@thinking-translator"]`。
+在 `/config` 里修改，或写入 `settings.json` 的 `pluginConfigs["thinking-translator@claude-thinking-translator"]`。
 
 | 配置项 | 默认值 | 说明 |
 |---|---|---|
