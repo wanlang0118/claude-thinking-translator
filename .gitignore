@@ -1,0 +1,4 @@
+.in_use/
+*.log
+node_modules/
+.DS_Store

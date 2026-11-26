@@ -1,0 +1,48 @@
+{
+  "name": "thinking-translator",
+  "displayName": "Thinking Translator",
+  "version": "0.1.0",
+  "description": "把 Claude Code 的思考内容翻译成目标语言（终端与桌面通用）：原文保留，译文显示在思考块下方，默认使用免费的微软翻译。",
+  "author": {
+    "name": "wanlang0118"
+  },
+  "license": "MIT",
+  "userConfig": {
+    "show_by_default": {
+      "type": "boolean",
+      "title": "默认显示译文",
+      "description": "开启后，思考翻译完成会显示在思考块下方；也可以随时用 /translate 切换。",
+      "default": true
+    },
+    "lang": {
+      "type": "string",
+      "title": "目标语言",
+      "description": "微软语言码，例如 zh-Hans（简体中文）、zh-Hant（繁体中文）、ja、ko、fr、de、es、ru。",
+      "default": "zh-Hans"
+    },
+    "provider": {
+      "type": "string",
+      "title": "翻译服务",
+      "description": "可填 microsoft、session 或 openai。microsoft：免费，无需 key，但思考文本会发给微软翻译服务；session：用本会话凭证调模型翻译，文本不出 Claude，会耗 token；openai：OpenAI 兼容接口（如本地 llama.cpp）。",
+      "default": "microsoft"
+    },
+    "model": {
+      "type": "string",
+      "title": "翻译模型",
+      "description": "provider 为 session 或 openai 时使用的模型名，例如 haiku。",
+      "default": "haiku"
+    },
+    "base_url": {
+      "type": "string",
+      "title": "OpenAI 兼容地址",
+      "description": "provider 为 openai 时使用，例如 http://127.0.0.1:8021/v1。",
+      "default": "http://127.0.0.1:8021/v1"
+    },
+    "api_key": {
+      "type": "string",
+      "title": "API Key",
+      "description": "provider 为 openai 且服务需要鉴权时填写；本地服务可留空。",
+      "sensitive": true
+    }
+  }
+}

@@ -1,0 +1,4 @@
+{
+  "description": "thinking-translator hooks module",
+  "modules": ["./register.js"]
+}

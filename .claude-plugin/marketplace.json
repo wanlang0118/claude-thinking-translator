@@ -1,0 +1,14 @@
+{
+  "name": "thinking-translator",
+  "description": "把 Claude Code 的思考内容翻译成目标语言（终端与桌面通用）",
+  "owner": {
+    "name": "wanlang0118"
+  },
+  "plugins": [
+    {
+      "name": "thinking-translator",
+      "source": "./",
+      "description": "思考原文保留，译文显示在思考块下方并用 Markdown 渲染；默认使用免费的微软翻译。"
+    }
+  ]
+}
